@@ -13,20 +13,21 @@ var foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(foods.grapes)
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
-
+foods.bananas = 36
+console.log(foods);
 
 // -------------------
 // Part 2: Email
@@ -38,18 +39,26 @@ var foods = {
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+var email = {
+  subject: "[New post] Terror Isle – Dungeon of the Drowned [Review]",
+  sender: "Room Escape Artist",
+  senderEmail: "donotreply@wordpress.com",
+  recipientEmail: "ben.rosner.williamsburg@gmail.com",
+  isSubscribed: true,
+  timeSent: "10:01 (3 hours ago)",
+  body: "Lorem ipsum dolor sit amet."
+}
 // Write code that logs your email object to the terminal.
-
+console.log(email);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.keys(email));
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.values(email));
 
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +108,35 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+var emails = [
+  {
+      subject: "[New post] Terror Isle – Dungeon of the Drowned [Review]",
+      sender: "Room Escape Artist",
+      senderEmail: "donotreply@wordpress.com",
+      recipientEmail: "ben.rosner.williamsburg@gmail.com",
+      isSubscribed: true,
+      timeSent: "10:01 (3 hours ago)",
+      body: "Lorem ipsum dolor sit amet."
+  },
+  {
+    
+    subject: "Master Gardener with Paul Schrader in Person, a retrospective of the most “punk” Italian filmmaker, Free 25 & Under Membership & More!",
+    sender: "Film at Lincoln Center",
+    senderEmail: "noreply@filmlinc.org",
+    recipientEmail: "ben.rosner.williamsburg@gmail.com",
+    isSubscribed: true,
+    timeSent: "Thu, 18 May, 14:13 (2 days ago)",
+    body: "Praesent nisi orci, pretium vel."
+  },
+  {
+    
+    subject: "Here are some FAQ's that may be helpful!",
+    sender: "Tamika Shipp",
+    senderEmail: "tamika@turing.edu",
+    recipientEmail: "ben.rosner.williamsburg@gmail.com",
+    isSubscribed: false,
+    timeSent: "Mon, 15 May, 14:04 (5 days ago)",
+    body: "Nam laoreet urna ut tellus."
+  }
+]
+console.log(emails);
